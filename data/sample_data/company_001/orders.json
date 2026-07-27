@@ -1,0 +1,118 @@
+[
+  {
+    "order_id": "ord_9001",
+    "customer_id": "cust_1001",
+    "order_date": "2026-06-28",
+    "status": "completed",
+    "total": 112.50,
+    "items_count": 3,
+    "channel": "web",
+    "coupon_used": false,
+    "is_first_order": false
+  },
+  {
+    "order_id": "ord_9002",
+    "customer_id": "cust_1006",
+    "order_date": "2026-07-10",
+    "status": "completed",
+    "total": 145.90,
+    "items_count": 4,
+    "channel": "web",
+    "coupon_used": true,
+    "is_first_order": false
+  },
+  {
+    "order_id": "ord_9003",
+    "customer_id": "cust_1004",
+    "order_date": "2026-07-02",
+    "status": "completed",
+    "total": 64.50,
+    "items_count": 2,
+    "channel": "mobile_app",
+    "coupon_used": false,
+    "is_first_order": true
+  },
+  {
+    "order_id": "ord_9004",
+    "customer_id": "cust_1002",
+    "order_date": "2026-05-12",
+    "status": "completed",
+    "total": 89.00,
+    "items_count": 2,
+    "channel": "web",
+    "coupon_used": false,
+    "is_first_order": false
+  },
+  {
+    "order_id": "ord_9005",
+    "customer_id": "cust_1003",
+    "order_date": "2026-01-15",
+    "status": "completed",
+    "total": 72.00,
+    "items_count": 1,
+    "channel": "web",
+    "coupon_used": true,
+    "is_first_order": false
+  },
+  {
+    "order_id": "ord_9006",
+    "customer_id": "cust_1007",
+    "order_date": "2026-06-03",
+    "status": "completed",
+    "total": 71.40,
+    "items_count": 2,
+    "channel": "instagram_shop",
+    "coupon_used": false,
+    "is_first_order": false
+  },
+  {
+    "order_id": "ord_9007",
+    "customer_id": "cust_1001",
+    "order_date": "2026-04-02",
+    "status": "refunded",
+    "total": 54.00,
+    "items_count": 1,
+    "channel": "web",
+    "coupon_used": false,
+    "is_first_order": false
+  },
+  {
+    "order_id": "ord_ab_001",
+    "customer_id": "cust_1002",
+    "order_date": "2026-07-18",
+    "status": "abandoned",
+    "total": 96.80,
+    "items_count": 3,
+    "channel": "web",
+    "coupon_used": false,
+    "is_first_order": false,
+    "abandoned_at": "2026-07-18T14:22:00",
+    "recovery_emails_sent": 0
+  },
+  {
+    "order_id": "ord_ab_002",
+    "customer_id": "cust_1004",
+    "order_date": "2026-07-20",
+    "status": "abandoned",
+    "total": 58.90,
+    "items_count": 1,
+    "channel": "mobile_app",
+    "coupon_used": false,
+    "is_first_order": false,
+    "abandoned_at": "2026-07-20T09:15:00",
+    "recovery_emails_sent": 1
+  },
+  {
+    "order_id": "ord_ab_003",
+    "customer_id": "cust_1007",
+    "order_date": "2026-07-22",
+    "status": "abandoned",
+    "total": 124.00,
+    "items_count": 3,
+    "channel": "web",
+    "coupon_used": false,
+    "is_first_order": false,
+    "abandoned_at": "2026-07-22T21:40:00",
+    "recovery_emails_sent": 0
+  }
+]

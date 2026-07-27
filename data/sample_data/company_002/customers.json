@@ -1,0 +1,26 @@
+[
+  {
+    "customer_id": "nb_01",
+    "segment": "Loyal",
+    "total_orders": 8,
+    "total_spent": 620,
+    "days_since_last_order": 35,
+    "churn_risk_score": 0.2
+  },
+  {
+    "customer_id": "nb_02",
+    "segment": "New",
+    "total_orders": 1,
+    "total_spent": 45,
+    "days_since_last_order": 12,
+    "churn_risk_score": 0.3
+  },
+  {
+    "customer_id": "nb_03",
+    "segment": "At Risk",
+    "total_orders": 3,
+    "total_spent": 180,
+    "days_since_last_order": 150,
+    "churn_risk_score": 0.75
+  }
+]

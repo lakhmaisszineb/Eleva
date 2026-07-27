@@ -1,0 +1,19 @@
+{
+  "name": "Lumina Beauty",
+  "industry": "beauty",
+  "description": "Premium clean beauty brand selling skincare and makeup online + 12 retail stores in France & Belgium.",
+  "goals": [
+    "Increase customer retention by 15% in 6 months",
+    "Reduce cart abandonment rate below 65%",
+    "Grow VIP segment revenue share to 35%",
+    "Improve email campaign ROI"
+  ],
+  "current_focus": "retention_and_cart_recovery",
+  "metadata": {
+    "founded": 2019,
+    "currency": "EUR",
+    "primary_channels": ["email", "instagram", "tiktok", "google_ads"],
+    "avg_order_value": 78.5,
+    "monthly_active_customers": 18400
+  }
+}

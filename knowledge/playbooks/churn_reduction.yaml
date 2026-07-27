@@ -1,0 +1,12 @@
+Technique: Churn Reduction
+Goal: Identify customers at risk of leaving and take action before they churn
+When to use: When churn rate is rising or when a significant portion of customers become inactive
+Recommended Actions:
+  - Build a churn risk score using recency, frequency, engagement and support signals
+  - Trigger proactive outreach for high-risk customers
+  - Offer personalized incentives or support
+  - Analyze reasons for churn and feed insights back into product and service
+KPIs:
+  - Churn Rate
+  - Retention Rate
+  - Reactivation of at-risk customers

@@ -1,0 +1,16 @@
+[
+  {
+    "campaign_id": "nb_camp1",
+    "name": "Welcome Discount",
+    "type": "welcome",
+    "conversion_rate": 0.05,
+    "roi": 2.8
+  },
+  {
+    "campaign_id": "nb_camp2",
+    "name": "Reactivation Test",
+    "type": "winback",
+    "conversion_rate": 0.015,
+    "roi": 0.9
+  }
+]

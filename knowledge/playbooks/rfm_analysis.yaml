@@ -1,0 +1,12 @@
+Technique: RFM Analysis
+Goal: Segment customers based on Recency, Frequency and Monetary value to prioritize actions
+When to use: Need to understand customer value distribution and identify VIP, loyal, at-risk and lost segments
+Recommended Actions:
+  - Calculate Recency (days since last order), Frequency (number of orders) and Monetary (total spent)
+  - Create segments such as Champions, Loyal, Potential Loyalists, At Risk, Hibernating, Lost
+  - Prioritize retention efforts on high-value at-risk customers
+  - Design differentiated campaigns per RFM segment
+KPIs:
+  - Segment distribution
+  - Revenue per segment
+  - Retention rate by segment

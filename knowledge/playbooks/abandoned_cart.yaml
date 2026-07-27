@@ -1,0 +1,12 @@
+Technique: Abandoned Cart Recovery
+Goal: Recover abandoned carts and convert them into completed orders
+When to use: Customer adds products to cart but does not complete checkout
+Recommended Actions:
+  - Send first reminder email 1 hour after abandonment
+  - Send second reminder 24 hours later
+  - Offer a small incentive only on the third message if needed
+  - Personalize with the exact products left in the cart
+KPIs:
+  - Cart Recovery Rate
+  - Conversion Rate
+  - Revenue Recovered

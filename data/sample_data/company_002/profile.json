@@ -1,0 +1,10 @@
+{
+  "name": "Nordic Brew Co",
+  "industry": "food_beverage",
+  "description": "Specialty coffee and tea e-commerce",
+  "goals": [
+    "Increase repeat purchase rate",
+    "Launch a loyalty program"
+  ],
+  "current_focus": "loyalty"
+}

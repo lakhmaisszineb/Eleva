@@ -1,0 +1,23 @@
+[
+  {
+    "order_id": "nb_o1",
+    "customer_id": "nb_01",
+    "status": "completed",
+    "total": 78,
+    "order_date": "2026-06-20"
+  },
+  {
+    "order_id": "nb_o2",
+    "customer_id": "nb_02",
+    "status": "completed",
+    "total": 45,
+    "order_date": "2026-07-14"
+  },
+  {
+    "order_id": "nb_o3",
+    "customer_id": "nb_03",
+    "status": "abandoned",
+    "total": 62,
+    "order_date": "2026-07-18"
+  }
+]
