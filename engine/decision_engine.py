@@ -5,9 +5,15 @@ Current version: sequential and synchronous.
 Later: will be converted to LangGraph.
 """
 
-from core.models import AnalysisRequest, DecisionState, Recommendation
+from core.models import AnalysisRequest, DecisionState
 from engine.nodes.understand import understand_node
 from engine.nodes.observe import observe_node
+from engine.nodes.detect import detect_node
+from engine.nodes.retrieve import retrieve_node
+from engine.nodes.reason import reason_node
+from engine.nodes.plan import plan_node
+from engine.nodes.decide import decide_node
+from engine.nodes.recommend import recommend_node
 from config import get_logger
 
 logger = get_logger(__name__)
@@ -23,15 +29,14 @@ class DecisionEngine:
 
     def run(self, request: AnalysisRequest) -> DecisionState:
         """
-        Execute the decision cycle for a given request.
+        Execute the full decision cycle for a given request.
         """
         logger.info(f"Starting decision cycle for company={request.company_id}")
         logger.info(f"Question: {request.question}")
 
-        # Initialize state
         state = DecisionState(request=request)
 
-        # ----- Pipeline (V1 – sequential) -----
+        # ----- Full Pipeline (V1 – sequential) -----
         state = understand_node(state)
         if state.errors:
             return state
@@ -40,13 +45,29 @@ class DecisionEngine:
         if state.errors:
             return state
 
-        # TODO: next nodes
-        # state = detect_node(state)
-        # state = retrieve_node(state)
-        # state = reason_node(state)
-        # state = plan_node(state)
-        # state = decide_node(state)
-        # state = recommend_node(state)
+        state = detect_node(state)
+        if state.errors:
+            return state
 
-        logger.info("Decision cycle finished (partial – Observe only for now)")
+        state = retrieve_node(state)
+        if state.errors:
+            return state
+
+        state = reason_node(state)
+        if state.errors:
+            return state
+
+        state = plan_node(state)
+        if state.errors:
+            return state
+
+        state = decide_node(state)
+        if state.errors:
+            return state
+
+        state = recommend_node(state)
+        if state.errors:
+            return state
+
+        logger.info("Decision cycle finished successfully")
         return state
