@@ -1,11 +1,10 @@
 """
 Observe node – Step 2 of the Decision Engine.
 
-This is where the agent looks at the company's reality:
-- Customers
-- Orders
-- Campaigns
-- Simple derived KPIs and insights
+Collects company data and computes:
+- Core KPIs (via services.metrics)
+- RFM segments (via services.rfm)
+- Human-readable insights
 """
 
 from datetime import datetime
@@ -19,6 +18,8 @@ from core.models import (
     SegmentSummary,
 )
 from data.company_store import CompanyStore
+from services.metrics import compute_core_metrics
+from services.rfm import compute_rfm
 from config import get_logger
 
 logger = get_logger(__name__)
@@ -39,69 +40,102 @@ def observe_node(state: DecisionState) -> DecisionState:
         orders = store.get_orders(company_id)
         campaigns = store.get_campaigns(company_id)
 
-        # ----- Basic KPIs -----
-        kpis: List[KPI] = []
+        # ----- Core metrics -----
+        metrics = compute_core_metrics(customers, orders, campaigns)
 
-        total_customers = len(customers)
-        kpis.append(KPI(name="total_customers", value=total_customers))
-
-        total_orders = len(orders)
-        kpis.append(KPI(name="total_orders", value=total_orders))
-
-        completed_orders = [o for o in orders if o.get("status") == "completed"]
-        abandoned_orders = [o for o in orders if o.get("status") == "abandoned"]
-
-        kpis.append(KPI(name="completed_orders", value=len(completed_orders)))
-        kpis.append(KPI(name="abandoned_orders", value=len(abandoned_orders)))
-
-        if total_orders > 0:
-            abandonment_rate = len(abandoned_orders) / total_orders
-            kpis.append(KPI(
+        kpis: List[KPI] = [
+            KPI(name="total_customers", value=metrics["total_customers"]),
+            KPI(name="total_orders", value=metrics["total_orders"]),
+            KPI(name="completed_orders", value=metrics["completed_orders"]),
+            KPI(name="abandoned_orders", value=metrics["abandoned_orders"]),
+            KPI(
                 name="cart_abandonment_rate",
-                value=round(abandonment_rate, 3),
-                unit="ratio"
-            ))
+                value=metrics["cart_abandonment_rate"],
+                unit="ratio",
+            ),
+            KPI(
+                name="average_order_value",
+                value=metrics["average_order_value"],
+                unit="currency",
+            ),
+            KPI(
+                name="repeat_purchase_rate",
+                value=metrics["repeat_purchase_rate"],
+                unit="ratio",
+            ),
+            KPI(
+                name="approx_clv",
+                value=metrics["approx_clv"],
+                unit="currency",
+            ),
+            KPI(
+                name="high_churn_risk_count",
+                value=metrics["high_churn_risk_count"],
+            ),
+        ]
 
-        # Average order value (completed only)
-        if completed_orders:
-            aov = sum(o.get("total", 0) for o in completed_orders) / len(completed_orders)
-            kpis.append(KPI(name="average_order_value", value=round(aov, 2), unit="currency"))
+        # ----- RFM -----
+        rfm_results = compute_rfm(customers, orders)
+        rfm_counter = Counter(r["rfm_segment"] for r in rfm_results)
 
-        # ----- Segments -----
-        segment_counter = Counter(c.get("segment", "Unknown") for c in customers)
         segments: List[SegmentSummary] = []
-        for name, size in segment_counter.items():
-            percentage = (size / total_customers * 100) if total_customers > 0 else 0
-            segments.append(SegmentSummary(
-                name=name,
-                size=size,
-                percentage=round(percentage, 1)
-            ))
-
-        # ----- Simple insights (human-readable) -----
-        insights: List[str] = []
-
-        if abandoned_orders:
-            insights.append(
-                f"{len(abandoned_orders)} abandoned cart(s) detected "
-                f"({round(len(abandoned_orders)/max(total_orders,1)*100, 1)}% of orders)."
+        total_rfm = len(rfm_results) or 1
+        for name, size in rfm_counter.items():
+            segments.append(
+                SegmentSummary(
+                    name=name,
+                    size=size,
+                    percentage=round(size / total_rfm * 100, 1),
+                    key_metrics={},
+                )
             )
 
-        at_risk = [c for c in customers if c.get("segment") == "At Risk"]
-        if at_risk:
-            insights.append(f"{len(at_risk)} customer(s) currently in 'At Risk' segment.")
+        # Store RFM details in metadata for explainability
+        rfm_summary = {
+            "segments": dict(rfm_counter),
+            "sample": rfm_results[:5],  # small sample for traceability
+        }
 
-        high_churn = [c for c in customers if c.get("churn_risk_score", 0) >= 0.7]
-        if high_churn:
-            insights.append(f"{len(high_churn)} customer(s) have a high churn risk score (≥ 0.7).")
+        # ----- Insights -----
+        insights: List[str] = []
 
-        low_roi_campaigns = [
-            c for c in campaigns
-            if c.get("roi") is not None and c.get("roi") < 1.5
-        ]
-        if low_roi_campaigns:
-            names = ", ".join(c.get("name", "Unknown") for c in low_roi_campaigns)
-            insights.append(f"Low ROI campaigns detected: {names}")
+        if metrics["abandoned_orders"] > 0:
+            insights.append(
+                f"{metrics['abandoned_orders']} panier(s) abandonné(s) "
+                f"({metrics['cart_abandonment_rate']:.0%} des commandes)."
+            )
+
+        if metrics["high_churn_risk_count"] > 0:
+            insights.append(
+                f"{metrics['high_churn_risk_count']} client(s) avec un score de churn élevé (≥ 0.7)."
+            )
+
+        if metrics["low_roi_campaigns_count"] > 0:
+            names = ", ".join(metrics["low_roi_campaign_names"])
+            insights.append(f"Campagnes à faible ROI détectées : {names}.")
+
+        at_risk_rfm = rfm_counter.get("At Risk", 0)
+        if at_risk_rfm > 0:
+            insights.append(
+                f"{at_risk_rfm} client(s) classés 'At Risk' par l'analyse RFM."
+            )
+
+        lost = rfm_counter.get("Lost / Churned", 0)
+        if lost > 0:
+            insights.append(
+                f"{lost} client(s) classés 'Lost / Churned' par l'analyse RFM."
+            )
+
+        champions = rfm_counter.get("Champions", 0)
+        if champions > 0:
+            insights.append(
+                f"{champions} client(s) 'Champions' (fort potentiel de valeur)."
+            )
+
+        if metrics["repeat_purchase_rate"] < 0.3:
+            insights.append(
+                f"Taux de réachat faible ({metrics['repeat_purchase_rate']:.0%})."
+            )
 
         # ----- Build Observation -----
         observation = Observation(
@@ -110,12 +144,19 @@ def observe_node(state: DecisionState) -> DecisionState:
             kpis=kpis,
             segments=segments,
             raw_insights=insights,
-            data_sources=["customers.json", "orders.json", "campaigns.json"],
+            data_sources=["customers.json", "orders.json", "campaigns.json", "rfm", "metrics"],
+            metadata={
+                "rfm": rfm_summary,
+                "metrics": metrics,
+            },
         )
 
         state.observation = observation
         state.current_step = "detect"
-        logger.info(f"[Observe] Observation complete – {len(insights)} insight(s) generated")
+        logger.info(
+            f"[Observe] Done – {len(kpis)} KPIs, {len(segments)} RFM segments, "
+            f"{len(insights)} insights"
+        )
 
     except Exception as e:
         logger.error(f"[Observe] Failed: {e}")

@@ -1,15 +1,16 @@
 """
-Full test of the Eleva Decision Engine.
+Full test of the Eleva Decision Engine + Explainability.
 Run with: python main.py
 """
 
 from core.models import AnalysisRequest
 from engine.decision_engine import DecisionEngine
+from engine.explain import explain_recommendation, format_explanation_for_display
 
 
 def main():
     print("=" * 70)
-    print("ELEVA – Full Decision Engine Test")
+    print("ELEVA – Full Decision Engine Test + Explainability")
     print("=" * 70)
 
     request = AnalysisRequest(
@@ -51,21 +52,25 @@ def main():
     if state.recommendations:
         for rec in state.recommendations:
             print(f"\n[{rec.priority.value.upper()}] {rec.title}")
+            print(f"  id            : {rec.id}")
             print(f"  Summary       : {rec.summary}")
             print(f"  Justification : {rec.justification}")
             print(f"  Status        : {rec.status.value}")
-            print(f"  Next steps    : {', '.join(rec.next_steps)}")
     else:
         print("No recommendations produced.")
+
+    # ----- Explain first recommendation -----
+    if state.recommendations:
+        print("\n")
+        explanation = explain_recommendation(state)  # first one
+        print(format_explanation_for_display(explanation))
 
     if state.errors:
         print("\n--- Errors ---")
         for err in state.errors:
             print(f"  ✗ {err}")
 
-    print("\n" + "=" * 70)
-    print(f"Current step: {state.current_step}")
-    print("=" * 70)
+    print(f"\nCurrent step: {state.current_step}")
 
 
 if __name__ == "__main__":
