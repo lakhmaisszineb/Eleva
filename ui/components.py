@@ -11,19 +11,24 @@ def inject_css(css: str):
 
 
 def topbar(api_ok: bool):
-    status = (
-        '<span class="status-dot"><span class="dot dot-on"></span> Agent disponible</span>'
-        if api_ok
-        else '<span class="status-dot"><span class="dot dot-off"></span> Agent hors ligne</span>'
-    )
+    """
+    Ligne du haut : Eleva (gauche) …… point statut (droite).
+    Hover Eleva → 'Agent de décision marketing'
+    Hover point → agent disponible / hors ligne
+    """
+    tip_brand = "Agent de décision marketing"
+    tip_status = "Agent disponible" if api_ok else "Agent hors ligne"
+    dot_class = "dot-on" if api_ok else "dot-off"
+
     st.markdown(
         f"""
         <div class="topbar">
-            <div class="brand">
+            <div class="brand" title="{tip_brand}">
                 <span class="name">Eleva</span>
-                <span class="sub">Agent de décision marketing · Solution IT</span>
             </div>
-            {status}
+            <div class="status-dot" title="{tip_status}">
+                <span class="dot {dot_class}"></span>
+            </div>
         </div>
         """,
         unsafe_allow_html=True,
@@ -31,6 +36,10 @@ def topbar(api_ok: bool):
 
 
 def navbar(pages: List[str]) -> str:
+    """
+    Navigation centrée sous la topbar.
+    Page active = style primary (mauve clair via CSS), pas rouge.
+    """
     current = st.session_state.get("page", pages[0])
     cols = st.columns(len(pages))
     for i, p in enumerate(pages):

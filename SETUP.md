@@ -79,3 +79,63 @@ safety check
 # Analyse statique du code (quand on aura du code)
 # bandit -r .
 # ruff check .
+```
+
+
+### 6. Configure environment
+
+```bash
+cp .env.example .env
+
+Windows (CMD):
+```bash
+copy .env.example .env
+
+Edit .env and set at least:
+
+envGROQ_API_KEY=gsk_your_key_here
+GROQ_MODEL=llama-3.3-70b-versatile
+DATA_DIR=./data/sample_data
+KNOWLEDGE_DIR=./knowledge/playbooks
+CHROMA_PERSIST_DIR=./chroma_db
+
+
+Never commit the real .env file.
+
+### 7. Run the project
+Always from the project root (eleva/), with the virtualenv activated.
+Terminal 1 — API (backend)
+```bash
+uvicorn api.main:app --reload --host 0.0.0.0 --port 8000
+```
+Health: http://127.0.0.1:8000/health
+Swagger: http://127.0.0.1:8000/docs
+
+Terminal 2 — UI (Streamlit)
+
+```bash
+streamlit run ui/app.py
+```
+UI: http://localhost:8501
+
+```bash
+export ELEVA_API_URL=http://127.0.0.1:8000
+```
+### 8. First analysis (smoke test)
+
+Open http://localhost:8501
+Check that the status dot shows Agent disponible (API must be running)
+Go to Analyse → select company_001 → choose a question → Lancer l’analyse
+Open Résultats, then Explication
+
+Or via API:
+
+```bash
+curl -s -X POST http://127.0.0.1:8000/analyze \
+  -H "Content-Type: application/json" \
+  -d '{
+    "company_id": "company_001",
+    "question": "Analyse la situation actuelle et propose les actions prioritaires.",
+    "max_recommendations": 3
+  }' | python -m json.tool
+```
