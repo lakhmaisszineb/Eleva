@@ -121,7 +121,7 @@ UI: http://localhost:8501
 ```bash
 export ELEVA_API_URL=http://127.0.0.1:8000
 ```
-### 8. First analysis (smoke test)
+### 8. First analysis 
 
 Open http://localhost:8501
 Check that the status dot shows Agent disponible (API must be running)
