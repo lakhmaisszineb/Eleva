@@ -67,3 +67,4 @@ Thumbs.db
 # Project specific
 data/sample_data/**/*.csv
 !data/sample_data/**/.gitkeep
+data/sample_data/eleva.db
