@@ -98,10 +98,22 @@ Deterministic operations such as KPI calculations, RFM segmentation, validation,
 
 ---
 
-## Getting Started
+## Project Structure (simplified)
 
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/lakhmaisszineb/Eleva.git
-cd Eleva
+```text
+eleva/
+├── api/                 # FastAPI app
+├── config/              # Settings & logging
+├── core/                # Pydantic models, exceptions
+├── data/                # CompanyStore, CSV importer, catalog
+│   ├── sample_data/     # Per-company JSON (local)
+│   └── importer/        # LLM column mapping + clean + validate
+├── engine/              # Decision Engine + nodes + explain
+├── knowledge/           # Playbooks + RAG
+├── llm/                 # Groq client + prompts
+├── services/            # RFM, metrics, client recommendations
+├── ui/                  # Streamlit app
+├── requirements.txt
+├── .env.example
+├── README.md
+└── SETUP.md

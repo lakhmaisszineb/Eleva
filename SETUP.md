@@ -121,7 +121,7 @@ UI: http://localhost:8501
 ```bash
 export ELEVA_API_URL=http://127.0.0.1:8000
 ```
-### 8. First analysis (smoke test)
+### 8. First analysis 
 
 Open http://localhost:8501
 Check that the status dot shows Agent disponible (API must be running)
@@ -138,9 +138,4 @@ curl -s -X POST http://127.0.0.1:8000/analyze \
     "question": "Analyse la situation actuelle et propose les actions prioritaires.",
     "max_recommendations": 3
   }' | python -m json.tool
-```
-
-### db:
-```bash
-sqlitebrowser data/sample_data/eleva.db
 ```
