@@ -5,12 +5,13 @@ Orchestrate CSV import: map → clean → validate → write JSON.
 from pathlib import Path
 from typing import Any, Dict, Optional
 import csv
-import json
+# import json
 
 from data.importer.column_mapper import map_columns_with_llm, validate_mapping
 from data.importer.cleaner import clean_row
 from data.importer.validator import validate_dataset
 from data.importer.report import build_import_report, format_report
+from data.db import get_connection, init_db, REPLACE_BY_ENTITY
 from config import settings, get_logger
 
 logger = get_logger(__name__)
@@ -88,18 +89,20 @@ def import_csv(
             "Import aborted. Check mapping and data quality."
         )
 
-    # ----- Write normalized JSON -----
+        # ----- Write to SQLite (replaces the entity's rows for this company,
     if write:
-        out_dir = Path(settings.data_dir) / company_id
-        out_dir.mkdir(parents=True, exist_ok=True)
-        out_file = out_dir / f"{entity}.json"
-        with open(out_file, "w", encoding="utf-8") as f:
-            json.dump(validation["accepted"], f, ensure_ascii=False, indent=2)
-        logger.info(f"[Import] Written {out_file} ({validation['accepted_count']} records)")
-        report["output_file"] = str(out_file)
-
-    return {
-        "report": report,
-        "accepted": validation["accepted"],
-        "rejected": validation["rejected"],
-    }
+        init_db()
+        conn = get_connection()
+        try:
+            replace_fn = REPLACE_BY_ENTITY[entity]
+            replace_fn(conn, company_id, validation["accepted"])
+            conn.commit()
+        except Exception:
+            conn.rollback()
+            raise
+        finally:
+            conn.close()
+        logger.info(
+            f"[Import] Wrote {validation['accepted_count']} '{entity}' rows "
+            f"into SQLite for company_id={company_id}"
+        )

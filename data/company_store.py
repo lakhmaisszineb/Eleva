@@ -1,83 +1,85 @@
 """
-CompanyStore – Access layer for private company data.
-
-Responsibilities:
-- Load company data in a multi-tenant safe way (by company_id)
-- Provide clean methods for the Observe step
-- Keep the Decision Engine independent from the storage format
-
-Current implementation: JSON files.
-Future: PostgreSQL + pgvector.
+CompanyStore – Access layer for private company data (SQLite-backed).
 """
 
-import json
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
 from config import settings, get_logger
 from core.exceptions import DataNotFoundError, InvalidCompanyError
 from core.models import CompanyContext
+from data.db import get_connection, init_db, loads
 
 logger = get_logger(__name__)
 
+_CUSTOMER_CORE_FIELDS = [
+    "customer_id", "total_orders", "total_spent",
+    "days_since_last_order", "churn_risk_score", "email", "segment",
+]
+_ORDER_CORE_FIELDS = ["order_id", "customer_id", "status", "total", "order_date"]
+_CAMPAIGN_CORE_FIELDS = ["campaign_id", "name", "type", "conversion_rate", "roi"]
+
+
+def _row_to_dict(row, core_fields: List[str]) -> Dict[str, Any]:
+    out = {field: row[field] for field in core_fields}
+    out.update(loads(row["extra_json"]))
+    return out
+
 
 class CompanyStore:
-    """
-    Simple multi-tenant data access layer.
-    """
-
     def __init__(self, data_dir: Optional[Path] = None):
         self.data_dir = data_dir or settings.data_dir
-        logger.info(f"CompanyStore initialized with data_dir={self.data_dir}")
-
-    # ------------------------------------------------------------------
-    # Internal helpers
-    # ------------------------------------------------------------------
-
-    def _company_path(self, company_id: str) -> Path:
-        path = self.data_dir / company_id
-        if not path.exists():
-            raise InvalidCompanyError(f"Company '{company_id}' not found in {self.data_dir}")
-        return path
-
-    def _load_json(self, company_id: str, filename: str) -> Any:
-        file_path = self._company_path(company_id) / filename
-        if not file_path.exists():
-            raise DataNotFoundError(f"File '{filename}' not found for company '{company_id}'")
-        with open(file_path, "r", encoding="utf-8") as f:
-            return json.load(f)
-
-    # ------------------------------------------------------------------
-    # Public API used by the Decision Engine
-    # ------------------------------------------------------------------
+        init_db()
+        logger.info(f"CompanyStore initialized with data_dir={self.data_dir} (SQLite)")
 
     def get_company_context(self, company_id: str) -> CompanyContext:
-        """Load the high-level company profile."""
-        raw = self._load_json(company_id, "profile.json")
+        conn = get_connection()
+        try:
+            row = conn.execute(
+                "SELECT * FROM company_profile WHERE company_id = ?", (company_id,)
+            ).fetchone()
+        finally:
+            conn.close()
+        if not row:
+            raise DataNotFoundError(f"Profile not found for company '{company_id}'")
         return CompanyContext(
             company_id=company_id,
-            name=raw["name"],
-            industry=raw["industry"],
-            description=raw.get("description"),
-            goals=raw.get("goals", []),
-            current_focus=raw.get("current_focus"),
-            metadata=raw.get("metadata", {}),
+            name=row["name"],
+            industry=row["industry"],
+            description=row["description"],
+            goals=loads(row["goals_json"]) or [],
+            current_focus=row["current_focus"],
+            metadata=loads(row["metadata_json"]) or {},
         )
 
     def get_customers(self, company_id: str) -> List[Dict[str, Any]]:
-        """Return all customers for a company."""
-        return self._load_json(company_id, "customers.json")
+        conn = get_connection()
+        try:
+            rows = conn.execute("SELECT * FROM customers WHERE company_id = ?", (company_id,)).fetchall()
+        finally:
+            conn.close()
+        return [_row_to_dict(r, _CUSTOMER_CORE_FIELDS) for r in rows]
 
     def get_orders(self, company_id: str) -> List[Dict[str, Any]]:
-        """Return all orders for a company."""
-        return self._load_json(company_id, "orders.json")
+        conn = get_connection()
+        try:
+            rows = conn.execute("SELECT * FROM orders WHERE company_id = ?", (company_id,)).fetchall()
+        finally:
+            conn.close()
+        return [_row_to_dict(r, _ORDER_CORE_FIELDS) for r in rows]
 
     def get_campaigns(self, company_id: str) -> List[Dict[str, Any]]:
-        """Return all marketing campaigns for a company."""
-        return self._load_json(company_id, "campaigns.json")
+        conn = get_connection()
+        try:
+            rows = conn.execute("SELECT * FROM campaigns WHERE company_id = ?", (company_id,)).fetchall()
+        finally:
+            conn.close()
+        return [_row_to_dict(r, _CAMPAIGN_CORE_FIELDS) for r in rows]
 
     def list_available_companies(self) -> List[str]:
-        """Return list of company_ids that have data."""
-        if not self.data_dir.exists():
-            return []
-        return [p.name for p in self.data_dir.iterdir() if p.is_dir()]
+        conn = get_connection()
+        try:
+            rows = conn.execute("SELECT company_id FROM company_profile").fetchall()
+        finally:
+            conn.close()
+        return [r["company_id"] for r in rows]

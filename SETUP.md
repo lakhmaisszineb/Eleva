@@ -139,3 +139,8 @@ curl -s -X POST http://127.0.0.1:8000/analyze \
     "max_recommendations": 3
   }' | python -m json.tool
 ```
+
+### db:
+```bash
+sqlitebrowser data/sample_data/eleva.db
+```

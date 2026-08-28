@@ -1,0 +1,3152 @@
+[
+  {
+    "customer_id": "101",
+    "total_orders": 14,
+    "total_spent": 1120.2,
+    "days_since_last_order": 25,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "102",
+    "total_orders": 11,
+    "total_spent": 780.5,
+    "days_since_last_order": 18,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "103",
+    "total_orders": 9,
+    "total_spent": 510.75,
+    "days_since_last_order": 42,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "104",
+    "total_orders": 19,
+    "total_spent": 1480.3,
+    "days_since_last_order": 12,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "105",
+    "total_orders": 13,
+    "total_spent": 720.4,
+    "days_since_last_order": 55,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "106",
+    "total_orders": 8,
+    "total_spent": 440.8,
+    "days_since_last_order": 22,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "107",
+    "total_orders": 15,
+    "total_spent": 1150.6,
+    "days_since_last_order": 28,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "108",
+    "total_orders": 12,
+    "total_spent": 800.9,
+    "days_since_last_order": 14,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "109",
+    "total_orders": 10,
+    "total_spent": 495.25,
+    "days_since_last_order": 40,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "110",
+    "total_orders": 21,
+    "total_spent": 1520.1,
+    "days_since_last_order": 9,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "111",
+    "total_orders": 11,
+    "total_spent": 690.3,
+    "days_since_last_order": 34,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "112",
+    "total_orders": 7,
+    "total_spent": 470.5,
+    "days_since_last_order": 20,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "113",
+    "total_orders": 16,
+    "total_spent": 1200.8,
+    "days_since_last_order": 21,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "114",
+    "total_orders": 13,
+    "total_spent": 820.75,
+    "days_since_last_order": 15,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "115",
+    "total_orders": 9,
+    "total_spent": 530.4,
+    "days_since_last_order": 38,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "116",
+    "total_orders": 18,
+    "total_spent": 1360.2,
+    "days_since_last_order": 11,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "117",
+    "total_orders": 12,
+    "total_spent": 700.6,
+    "days_since_last_order": 48,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "118",
+    "total_orders": 8,
+    "total_spent": 450.9,
+    "days_since_last_order": 25,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "119",
+    "total_orders": 14,
+    "total_spent": 1170.3,
+    "days_since_last_order": 29,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "120",
+    "total_orders": 11,
+    "total_spent": 790.2,
+    "days_since_last_order": 16,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "121",
+    "total_orders": 10,
+    "total_spent": 505.75,
+    "days_since_last_order": 41,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "122",
+    "total_orders": 20,
+    "total_spent": 1470.5,
+    "days_since_last_order": 13,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "123",
+    "total_orders": 13,
+    "total_spent": 710.4,
+    "days_since_last_order": 54,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "124",
+    "total_orders": 7,
+    "total_spent": 430.8,
+    "days_since_last_order": 23,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "125",
+    "total_orders": 15,
+    "total_spent": 1140.6,
+    "days_since_last_order": 27,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "126",
+    "total_orders": 12,
+    "total_spent": 810.9,
+    "days_since_last_order": 13,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "127",
+    "total_orders": 9,
+    "total_spent": 485.25,
+    "days_since_last_order": 39,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "128",
+    "total_orders": 21,
+    "total_spent": 1500.1,
+    "days_since_last_order": 10,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "129",
+    "total_orders": 10,
+    "total_spent": 670.3,
+    "days_since_last_order": 33,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "130",
+    "total_orders": 8,
+    "total_spent": 460.5,
+    "days_since_last_order": 19,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "131",
+    "total_orders": 16,
+    "total_spent": 1190.8,
+    "days_since_last_order": 20,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "132",
+    "total_orders": 13,
+    "total_spent": 830.75,
+    "days_since_last_order": 14,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "133",
+    "total_orders": 9,
+    "total_spent": 520.4,
+    "days_since_last_order": 37,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "134",
+    "total_orders": 18,
+    "total_spent": 1370.2,
+    "days_since_last_order": 10,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "135",
+    "total_orders": 12,
+    "total_spent": 690.6,
+    "days_since_last_order": 47,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "136",
+    "total_orders": 8,
+    "total_spent": 440.9,
+    "days_since_last_order": 24,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "137",
+    "total_orders": 14,
+    "total_spent": 1160.3,
+    "days_since_last_order": 22,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "138",
+    "total_orders": 11,
+    "total_spent": 800.2,
+    "days_since_last_order": 17,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "139",
+    "total_orders": 10,
+    "total_spent": 500.75,
+    "days_since_last_order": 40,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "140",
+    "total_orders": 20,
+    "total_spent": 1460.5,
+    "days_since_last_order": 12,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "141",
+    "total_orders": 13,
+    "total_spent": 700.4,
+    "days_since_last_order": 53,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "142",
+    "total_orders": 7,
+    "total_spent": 420.8,
+    "days_since_last_order": 21,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "143",
+    "total_orders": 15,
+    "total_spent": 1130.6,
+    "days_since_last_order": 26,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "144",
+    "total_orders": 12,
+    "total_spent": 820.9,
+    "days_since_last_order": 12,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "145",
+    "total_orders": 9,
+    "total_spent": 480.25,
+    "days_since_last_order": 38,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "146",
+    "total_orders": 21,
+    "total_spent": 1490.1,
+    "days_since_last_order": 9,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "147",
+    "total_orders": 10,
+    "total_spent": 680.3,
+    "days_since_last_order": 32,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "148",
+    "total_orders": 8,
+    "total_spent": 470.5,
+    "days_since_last_order": 18,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "149",
+    "total_orders": 16,
+    "total_spent": 1180.8,
+    "days_since_last_order": 19,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "150",
+    "total_orders": 11,
+    "total_spent": 790.2,
+    "days_since_last_order": 15,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "151",
+    "total_orders": 10,
+    "total_spent": 505.75,
+    "days_since_last_order": 39,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "152",
+    "total_orders": 20,
+    "total_spent": 1470.5,
+    "days_since_last_order": 13,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "153",
+    "total_orders": 13,
+    "total_spent": 710.4,
+    "days_since_last_order": 54,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "154",
+    "total_orders": 7,
+    "total_spent": 430.8,
+    "days_since_last_order": 23,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "155",
+    "total_orders": 15,
+    "total_spent": 1140.6,
+    "days_since_last_order": 27,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "156",
+    "total_orders": 12,
+    "total_spent": 810.9,
+    "days_since_last_order": 13,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "157",
+    "total_orders": 9,
+    "total_spent": 485.25,
+    "days_since_last_order": 39,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "158",
+    "total_orders": 21,
+    "total_spent": 1500.1,
+    "days_since_last_order": 10,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "159",
+    "total_orders": 10,
+    "total_spent": 670.3,
+    "days_since_last_order": 33,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "160",
+    "total_orders": 8,
+    "total_spent": 460.5,
+    "days_since_last_order": 19,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "161",
+    "total_orders": 16,
+    "total_spent": 1190.8,
+    "days_since_last_order": 20,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "162",
+    "total_orders": 13,
+    "total_spent": 830.75,
+    "days_since_last_order": 14,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "163",
+    "total_orders": 9,
+    "total_spent": 520.4,
+    "days_since_last_order": 37,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "164",
+    "total_orders": 18,
+    "total_spent": 1370.2,
+    "days_since_last_order": 10,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "165",
+    "total_orders": 12,
+    "total_spent": 690.6,
+    "days_since_last_order": 47,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "166",
+    "total_orders": 8,
+    "total_spent": 440.9,
+    "days_since_last_order": 24,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "167",
+    "total_orders": 14,
+    "total_spent": 1160.3,
+    "days_since_last_order": 22,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "168",
+    "total_orders": 11,
+    "total_spent": 800.2,
+    "days_since_last_order": 17,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "169",
+    "total_orders": 10,
+    "total_spent": 500.75,
+    "days_since_last_order": 40,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "170",
+    "total_orders": 20,
+    "total_spent": 1460.5,
+    "days_since_last_order": 12,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "171",
+    "total_orders": 13,
+    "total_spent": 700.4,
+    "days_since_last_order": 53,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "172",
+    "total_orders": 7,
+    "total_spent": 420.8,
+    "days_since_last_order": 21,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "173",
+    "total_orders": 15,
+    "total_spent": 1130.6,
+    "days_since_last_order": 26,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "174",
+    "total_orders": 12,
+    "total_spent": 820.9,
+    "days_since_last_order": 12,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "175",
+    "total_orders": 9,
+    "total_spent": 480.25,
+    "days_since_last_order": 38,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "176",
+    "total_orders": 21,
+    "total_spent": 1490.1,
+    "days_since_last_order": 9,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "177",
+    "total_orders": 10,
+    "total_spent": 680.3,
+    "days_since_last_order": 32,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "178",
+    "total_orders": 8,
+    "total_spent": 470.5,
+    "days_since_last_order": 18,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "179",
+    "total_orders": 16,
+    "total_spent": 1180.8,
+    "days_since_last_order": 19,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "180",
+    "total_orders": 11,
+    "total_spent": 790.2,
+    "days_since_last_order": 15,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "181",
+    "total_orders": 10,
+    "total_spent": 505.75,
+    "days_since_last_order": 39,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "182",
+    "total_orders": 20,
+    "total_spent": 1470.5,
+    "days_since_last_order": 13,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "183",
+    "total_orders": 13,
+    "total_spent": 710.4,
+    "days_since_last_order": 54,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "184",
+    "total_orders": 7,
+    "total_spent": 430.8,
+    "days_since_last_order": 23,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "185",
+    "total_orders": 15,
+    "total_spent": 1140.6,
+    "days_since_last_order": 27,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "186",
+    "total_orders": 12,
+    "total_spent": 810.9,
+    "days_since_last_order": 13,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "187",
+    "total_orders": 9,
+    "total_spent": 485.25,
+    "days_since_last_order": 39,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "188",
+    "total_orders": 21,
+    "total_spent": 1500.1,
+    "days_since_last_order": 10,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "189",
+    "total_orders": 10,
+    "total_spent": 670.3,
+    "days_since_last_order": 33,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "190",
+    "total_orders": 8,
+    "total_spent": 460.5,
+    "days_since_last_order": 19,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "191",
+    "total_orders": 16,
+    "total_spent": 1190.8,
+    "days_since_last_order": 20,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "192",
+    "total_orders": 13,
+    "total_spent": 830.75,
+    "days_since_last_order": 14,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "193",
+    "total_orders": 9,
+    "total_spent": 520.4,
+    "days_since_last_order": 37,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "194",
+    "total_orders": 18,
+    "total_spent": 1370.2,
+    "days_since_last_order": 10,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "195",
+    "total_orders": 12,
+    "total_spent": 690.6,
+    "days_since_last_order": 47,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "196",
+    "total_orders": 8,
+    "total_spent": 440.9,
+    "days_since_last_order": 24,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "197",
+    "total_orders": 14,
+    "total_spent": 1160.3,
+    "days_since_last_order": 22,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "198",
+    "total_orders": 11,
+    "total_spent": 800.2,
+    "days_since_last_order": 17,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "199",
+    "total_orders": 10,
+    "total_spent": 500.75,
+    "days_since_last_order": 40,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "200",
+    "total_orders": 20,
+    "total_spent": 1460.5,
+    "days_since_last_order": 12,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "201",
+    "total_orders": 13,
+    "total_spent": 700.4,
+    "days_since_last_order": 53,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "202",
+    "total_orders": 7,
+    "total_spent": 420.8,
+    "days_since_last_order": 21,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "203",
+    "total_orders": 15,
+    "total_spent": 1130.6,
+    "days_since_last_order": 26,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "204",
+    "total_orders": 12,
+    "total_spent": 820.9,
+    "days_since_last_order": 12,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "205",
+    "total_orders": 9,
+    "total_spent": 480.25,
+    "days_since_last_order": 38,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "206",
+    "total_orders": 21,
+    "total_spent": 1490.1,
+    "days_since_last_order": 9,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "207",
+    "total_orders": 10,
+    "total_spent": 680.3,
+    "days_since_last_order": 32,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "208",
+    "total_orders": 8,
+    "total_spent": 470.5,
+    "days_since_last_order": 18,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "209",
+    "total_orders": 16,
+    "total_spent": 1180.8,
+    "days_since_last_order": 19,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "210",
+    "total_orders": 11,
+    "total_spent": 790.2,
+    "days_since_last_order": 15,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "211",
+    "total_orders": 10,
+    "total_spent": 505.75,
+    "days_since_last_order": 39,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "212",
+    "total_orders": 20,
+    "total_spent": 1470.5,
+    "days_since_last_order": 13,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "213",
+    "total_orders": 13,
+    "total_spent": 710.4,
+    "days_since_last_order": 54,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "214",
+    "total_orders": 7,
+    "total_spent": 430.8,
+    "days_since_last_order": 23,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "215",
+    "total_orders": 15,
+    "total_spent": 1140.6,
+    "days_since_last_order": 27,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "216",
+    "total_orders": 12,
+    "total_spent": 810.9,
+    "days_since_last_order": 13,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "217",
+    "total_orders": 9,
+    "total_spent": 485.25,
+    "days_since_last_order": 39,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "218",
+    "total_orders": 21,
+    "total_spent": 1500.1,
+    "days_since_last_order": 10,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "219",
+    "total_orders": 10,
+    "total_spent": 670.3,
+    "days_since_last_order": 33,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "220",
+    "total_orders": 8,
+    "total_spent": 460.5,
+    "days_since_last_order": 19,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "221",
+    "total_orders": 16,
+    "total_spent": 1190.8,
+    "days_since_last_order": 20,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "222",
+    "total_orders": 13,
+    "total_spent": 830.75,
+    "days_since_last_order": 14,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "223",
+    "total_orders": 9,
+    "total_spent": 520.4,
+    "days_since_last_order": 37,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "224",
+    "total_orders": 18,
+    "total_spent": 1370.2,
+    "days_since_last_order": 10,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "225",
+    "total_orders": 12,
+    "total_spent": 690.6,
+    "days_since_last_order": 47,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "226",
+    "total_orders": 8,
+    "total_spent": 440.9,
+    "days_since_last_order": 24,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "227",
+    "total_orders": 14,
+    "total_spent": 1160.3,
+    "days_since_last_order": 22,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "228",
+    "total_orders": 11,
+    "total_spent": 800.2,
+    "days_since_last_order": 17,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "229",
+    "total_orders": 10,
+    "total_spent": 500.75,
+    "days_since_last_order": 40,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "230",
+    "total_orders": 20,
+    "total_spent": 1460.5,
+    "days_since_last_order": 12,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "231",
+    "total_orders": 13,
+    "total_spent": 700.4,
+    "days_since_last_order": 53,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "232",
+    "total_orders": 7,
+    "total_spent": 420.8,
+    "days_since_last_order": 21,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "233",
+    "total_orders": 15,
+    "total_spent": 1130.6,
+    "days_since_last_order": 26,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "234",
+    "total_orders": 12,
+    "total_spent": 820.9,
+    "days_since_last_order": 12,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "235",
+    "total_orders": 9,
+    "total_spent": 480.25,
+    "days_since_last_order": 38,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "236",
+    "total_orders": 21,
+    "total_spent": 1490.1,
+    "days_since_last_order": 9,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "237",
+    "total_orders": 10,
+    "total_spent": 680.3,
+    "days_since_last_order": 32,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "238",
+    "total_orders": 8,
+    "total_spent": 470.5,
+    "days_since_last_order": 18,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "239",
+    "total_orders": 16,
+    "total_spent": 1180.8,
+    "days_since_last_order": 19,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "240",
+    "total_orders": 11,
+    "total_spent": 790.2,
+    "days_since_last_order": 15,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "241",
+    "total_orders": 10,
+    "total_spent": 505.75,
+    "days_since_last_order": 39,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "242",
+    "total_orders": 20,
+    "total_spent": 1470.5,
+    "days_since_last_order": 13,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "243",
+    "total_orders": 13,
+    "total_spent": 710.4,
+    "days_since_last_order": 54,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "244",
+    "total_orders": 7,
+    "total_spent": 430.8,
+    "days_since_last_order": 23,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "245",
+    "total_orders": 15,
+    "total_spent": 1130.6,
+    "days_since_last_order": 26,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "246",
+    "total_orders": 12,
+    "total_spent": 820.9,
+    "days_since_last_order": 12,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "247",
+    "total_orders": 9,
+    "total_spent": 480.25,
+    "days_since_last_order": 38,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "248",
+    "total_orders": 21,
+    "total_spent": 1490.1,
+    "days_since_last_order": 9,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "249",
+    "total_orders": 10,
+    "total_spent": 680.3,
+    "days_since_last_order": 32,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "250",
+    "total_orders": 8,
+    "total_spent": 470.5,
+    "days_since_last_order": 18,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "251",
+    "total_orders": 16,
+    "total_spent": 1180.8,
+    "days_since_last_order": 19,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "252",
+    "total_orders": 11,
+    "total_spent": 790.2,
+    "days_since_last_order": 15,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "253",
+    "total_orders": 10,
+    "total_spent": 505.75,
+    "days_since_last_order": 39,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "254",
+    "total_orders": 20,
+    "total_spent": 1470.5,
+    "days_since_last_order": 13,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "255",
+    "total_orders": 13,
+    "total_spent": 710.4,
+    "days_since_last_order": 54,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "256",
+    "total_orders": 7,
+    "total_spent": 430.8,
+    "days_since_last_order": 23,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "257",
+    "total_orders": 15,
+    "total_spent": 1140.6,
+    "days_since_last_order": 27,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "258",
+    "total_orders": 12,
+    "total_spent": 810.9,
+    "days_since_last_order": 13,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "259",
+    "total_orders": 9,
+    "total_spent": 485.25,
+    "days_since_last_order": 39,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "260",
+    "total_orders": 21,
+    "total_spent": 1500.1,
+    "days_since_last_order": 10,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "261",
+    "total_orders": 10,
+    "total_spent": 670.3,
+    "days_since_last_order": 33,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "262",
+    "total_orders": 8,
+    "total_spent": 460.5,
+    "days_since_last_order": 19,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "263",
+    "total_orders": 16,
+    "total_spent": 1190.8,
+    "days_since_last_order": 20,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "264",
+    "total_orders": 13,
+    "total_spent": 830.75,
+    "days_since_last_order": 14,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "265",
+    "total_orders": 9,
+    "total_spent": 520.4,
+    "days_since_last_order": 37,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "266",
+    "total_orders": 18,
+    "total_spent": 1370.2,
+    "days_since_last_order": 10,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "267",
+    "total_orders": 12,
+    "total_spent": 690.6,
+    "days_since_last_order": 47,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "268",
+    "total_orders": 8,
+    "total_spent": 440.9,
+    "days_since_last_order": 24,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "269",
+    "total_orders": 14,
+    "total_spent": 1160.3,
+    "days_since_last_order": 22,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "270",
+    "total_orders": 11,
+    "total_spent": 800.2,
+    "days_since_last_order": 17,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "271",
+    "total_orders": 10,
+    "total_spent": 500.75,
+    "days_since_last_order": 40,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "272",
+    "total_orders": 20,
+    "total_spent": 1460.5,
+    "days_since_last_order": 12,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "273",
+    "total_orders": 13,
+    "total_spent": 700.4,
+    "days_since_last_order": 53,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "274",
+    "total_orders": 7,
+    "total_spent": 430.8,
+    "days_since_last_order": 23,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "275",
+    "total_orders": 15,
+    "total_spent": 1140.6,
+    "days_since_last_order": 27,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "276",
+    "total_orders": 12,
+    "total_spent": 820.9,
+    "days_since_last_order": 12,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "277",
+    "total_orders": 9,
+    "total_spent": 480.25,
+    "days_since_last_order": 38,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "278",
+    "total_orders": 21,
+    "total_spent": 1490.1,
+    "days_since_last_order": 9,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "279",
+    "total_orders": 10,
+    "total_spent": 680.3,
+    "days_since_last_order": 32,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "280",
+    "total_orders": 8,
+    "total_spent": 470.5,
+    "days_since_last_order": 18,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "281",
+    "total_orders": 16,
+    "total_spent": 1180.8,
+    "days_since_last_order": 19,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "282",
+    "total_orders": 11,
+    "total_spent": 790.2,
+    "days_since_last_order": 15,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "283",
+    "total_orders": 10,
+    "total_spent": 505.75,
+    "days_since_last_order": 39,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "284",
+    "total_orders": 20,
+    "total_spent": 1470.5,
+    "days_since_last_order": 13,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "285",
+    "total_orders": 13,
+    "total_spent": 710.4,
+    "days_since_last_order": 54,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "286",
+    "total_orders": 7,
+    "total_spent": 430.8,
+    "days_since_last_order": 23,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "287",
+    "total_orders": 15,
+    "total_spent": 1130.6,
+    "days_since_last_order": 26,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "288",
+    "total_orders": 12,
+    "total_spent": 820.9,
+    "days_since_last_order": 13,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "289",
+    "total_orders": 9,
+    "total_spent": 485.25,
+    "days_since_last_order": 39,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "290",
+    "total_orders": 21,
+    "total_spent": 1500.1,
+    "days_since_last_order": 10,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "291",
+    "total_orders": 10,
+    "total_spent": 670.3,
+    "days_since_last_order": 33,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "292",
+    "total_orders": 8,
+    "total_spent": 460.5,
+    "days_since_last_order": 19,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "293",
+    "total_orders": 16,
+    "total_spent": 1190.8,
+    "days_since_last_order": 20,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "294",
+    "total_orders": 13,
+    "total_spent": 830.75,
+    "days_since_last_order": 14,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "295",
+    "total_orders": 9,
+    "total_spent": 520.4,
+    "days_since_last_order": 37,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "296",
+    "total_orders": 18,
+    "total_spent": 1370.2,
+    "days_since_last_order": 10,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "297",
+    "total_orders": 12,
+    "total_spent": 690.6,
+    "days_since_last_order": 47,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "298",
+    "total_orders": 8,
+    "total_spent": 440.9,
+    "days_since_last_order": 24,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "299",
+    "total_orders": 14,
+    "total_spent": 1160.3,
+    "days_since_last_order": 22,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "300",
+    "total_orders": 11,
+    "total_spent": 800.2,
+    "days_since_last_order": 17,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "301",
+    "total_orders": 19,
+    "total_spent": 1420.8,
+    "days_since_last_order": 11,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "302",
+    "total_orders": 14,
+    "total_spent": 730.4,
+    "days_since_last_order": 50,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "303",
+    "total_orders": 7,
+    "total_spent": 450.6,
+    "days_since_last_order": 21,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "304",
+    "total_orders": 17,
+    "total_spent": 1210.6,
+    "days_since_last_order": 18,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "305",
+    "total_orders": 11,
+    "total_spent": 780.9,
+    "days_since_last_order": 16,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "306",
+    "total_orders": 10,
+    "total_spent": 495.25,
+    "days_since_last_order": 35,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "307",
+    "total_orders": 18,
+    "total_spent": 1390.2,
+    "days_since_last_order": 9,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "308",
+    "total_orders": 12,
+    "total_spent": 670.6,
+    "days_since_last_order": 46,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "309",
+    "total_orders": 8,
+    "total_spent": 460.9,
+    "days_since_last_order": 25,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "310",
+    "total_orders": 14,
+    "total_spent": 1170.3,
+    "days_since_last_order": 21,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "311",
+    "total_orders": 11,
+    "total_spent": 810.2,
+    "days_since_last_order": 14,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "312",
+    "total_orders": 9,
+    "total_spent": 515.75,
+    "days_since_last_order": 38,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "313",
+    "total_orders": 20,
+    "total_spent": 1450.5,
+    "days_since_last_order": 12,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "314",
+    "total_orders": 13,
+    "total_spent": 690.4,
+    "days_since_last_order": 52,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "315",
+    "total_orders": 7,
+    "total_spent": 420.8,
+    "days_since_last_order": 24,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "316",
+    "total_orders": 15,
+    "total_spent": 1130.6,
+    "days_since_last_order": 26,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "317",
+    "total_orders": 12,
+    "total_spent": 820.9,
+    "days_since_last_order": 13,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "318",
+    "total_orders": 9,
+    "total_spent": 480.25,
+    "days_since_last_order": 39,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "319",
+    "total_orders": 21,
+    "total_spent": 1490.1,
+    "days_since_last_order": 9,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "320",
+    "total_orders": 10,
+    "total_spent": 680.3,
+    "days_since_last_order": 32,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "321",
+    "total_orders": 8,
+    "total_spent": 470.5,
+    "days_since_last_order": 18,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "322",
+    "total_orders": 16,
+    "total_spent": 1180.8,
+    "days_since_last_order": 19,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "323",
+    "total_orders": 11,
+    "total_spent": 790.2,
+    "days_since_last_order": 15,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "324",
+    "total_orders": 10,
+    "total_spent": 505.75,
+    "days_since_last_order": 39,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "325",
+    "total_orders": 20,
+    "total_spent": 1470.5,
+    "days_since_last_order": 13,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "326",
+    "total_orders": 13,
+    "total_spent": 710.4,
+    "days_since_last_order": 54,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "327",
+    "total_orders": 7,
+    "total_spent": 430.8,
+    "days_since_last_order": 23,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "328",
+    "total_orders": 15,
+    "total_spent": 1140.6,
+    "days_since_last_order": 27,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "329",
+    "total_orders": 12,
+    "total_spent": 820.9,
+    "days_since_last_order": 13,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "330",
+    "total_orders": 9,
+    "total_spent": 485.25,
+    "days_since_last_order": 39,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "331",
+    "total_orders": 21,
+    "total_spent": 1500.1,
+    "days_since_last_order": 10,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "332",
+    "total_orders": 10,
+    "total_spent": 670.3,
+    "days_since_last_order": 33,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "333",
+    "total_orders": 8,
+    "total_spent": 460.5,
+    "days_since_last_order": 19,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "334",
+    "total_orders": 16,
+    "total_spent": 1190.8,
+    "days_since_last_order": 20,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "335",
+    "total_orders": 13,
+    "total_spent": 830.75,
+    "days_since_last_order": 14,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "336",
+    "total_orders": 9,
+    "total_spent": 520.4,
+    "days_since_last_order": 37,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "337",
+    "total_orders": 18,
+    "total_spent": 1370.2,
+    "days_since_last_order": 10,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "338",
+    "total_orders": 12,
+    "total_spent": 690.6,
+    "days_since_last_order": 47,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "339",
+    "total_orders": 8,
+    "total_spent": 440.9,
+    "days_since_last_order": 24,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "340",
+    "total_orders": 14,
+    "total_spent": 1160.3,
+    "days_since_last_order": 22,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "341",
+    "total_orders": 11,
+    "total_spent": 800.2,
+    "days_since_last_order": 17,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "342",
+    "total_orders": 9,
+    "total_spent": 525.75,
+    "days_since_last_order": 40,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "343",
+    "total_orders": 20,
+    "total_spent": 1460.5,
+    "days_since_last_order": 11,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "344",
+    "total_orders": 13,
+    "total_spent": 720.4,
+    "days_since_last_order": 55,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "345",
+    "total_orders": 7,
+    "total_spent": 440.8,
+    "days_since_last_order": 25,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "346",
+    "total_orders": 15,
+    "total_spent": 1150.6,
+    "days_since_last_order": 28,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "347",
+    "total_orders": 12,
+    "total_spent": 830.9,
+    "days_since_last_order": 14,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "348",
+    "total_orders": 9,
+    "total_spent": 490.25,
+    "days_since_last_order": 40,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "349",
+    "total_orders": 21,
+    "total_spent": 1480.1,
+    "days_since_last_order": 10,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "350",
+    "total_orders": 10,
+    "total_spent": 690.3,
+    "days_since_last_order": 34,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "351",
+    "total_orders": 8,
+    "total_spent": 480.5,
+    "days_since_last_order": 20,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "352",
+    "total_orders": 16,
+    "total_spent": 1170.8,
+    "days_since_last_order": 21,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "353",
+    "total_orders": 11,
+    "total_spent": 790.2,
+    "days_since_last_order": 15,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "354",
+    "total_orders": 10,
+    "total_spent": 510.75,
+    "days_since_last_order": 41,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "355",
+    "total_orders": 19,
+    "total_spent": 1440.5,
+    "days_since_last_order": 12,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "356",
+    "total_orders": 13,
+    "total_spent": 700.4,
+    "days_since_last_order": 56,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "357",
+    "total_orders": 7,
+    "total_spent": 410.8,
+    "days_since_last_order": 26,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "358",
+    "total_orders": 15,
+    "total_spent": 1160.6,
+    "days_since_last_order": 29,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "359",
+    "total_orders": 12,
+    "total_spent": 810.9,
+    "days_since_last_order": 14,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "360",
+    "total_orders": 9,
+    "total_spent": 495.25,
+    "days_since_last_order": 41,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "361",
+    "total_orders": 21,
+    "total_spent": 1490.1,
+    "days_since_last_order": 10,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "362",
+    "total_orders": 10,
+    "total_spent": 660.3,
+    "days_since_last_order": 35,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "363",
+    "total_orders": 8,
+    "total_spent": 430.5,
+    "days_since_last_order": 21,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "364",
+    "total_orders": 16,
+    "total_spent": 1200.8,
+    "days_since_last_order": 22,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "365",
+    "total_orders": 11,
+    "total_spent": 780.2,
+    "days_since_last_order": 16,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "366",
+    "total_orders": 10,
+    "total_spent": 505.75,
+    "days_since_last_order": 42,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "367",
+    "total_orders": 20,
+    "total_spent": 1460.5,
+    "days_since_last_order": 13,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "368",
+    "total_orders": 13,
+    "total_spent": 710.4,
+    "days_since_last_order": 57,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "369",
+    "total_orders": 7,
+    "total_spent": 450.8,
+    "days_since_last_order": 24,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "370",
+    "total_orders": 15,
+    "total_spent": 1140.6,
+    "days_since_last_order": 30,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "371",
+    "total_orders": 12,
+    "total_spent": 800.9,
+    "days_since_last_order": 17,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "372",
+    "total_orders": 9,
+    "total_spent": 475.25,
+    "days_since_last_order": 42,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "373",
+    "total_orders": 21,
+    "total_spent": 1480.1,
+    "days_since_last_order": 11,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "374",
+    "total_orders": 10,
+    "total_spent": 660.3,
+    "days_since_last_order": 36,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "375",
+    "total_orders": 8,
+    "total_spent": 470.5,
+    "days_since_last_order": 22,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "376",
+    "total_orders": 16,
+    "total_spent": 1190.8,
+    "days_since_last_order": 23,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "377",
+    "total_orders": 11,
+    "total_spent": 770.2,
+    "days_since_last_order": 18,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "378",
+    "total_orders": 10,
+    "total_spent": 515.75,
+    "days_since_last_order": 43,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "379",
+    "total_orders": 19,
+    "total_spent": 1450.5,
+    "days_since_last_order": 12,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "380",
+    "total_orders": 13,
+    "total_spent": 710.4,
+    "days_since_last_order": 58,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "381",
+    "total_orders": 7,
+    "total_spent": 430.8,
+    "days_since_last_order": 27,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "382",
+    "total_orders": 15,
+    "total_spent": 1160.6,
+    "days_since_last_order": 31,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "383",
+    "total_orders": 12,
+    "total_spent": 820.9,
+    "days_since_last_order": 15,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "384",
+    "total_orders": 9,
+    "total_spent": 495.25,
+    "days_since_last_order": 43,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "385",
+    "total_orders": 21,
+    "total_spent": 1490.1,
+    "days_since_last_order": 10,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "386",
+    "total_orders": 10,
+    "total_spent": 660.3,
+    "days_since_last_order": 37,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "387",
+    "total_orders": 8,
+    "total_spent": 440.5,
+    "days_since_last_order": 23,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "388",
+    "total_orders": 16,
+    "total_spent": 1200.8,
+    "days_since_last_order": 24,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "389",
+    "total_orders": 11,
+    "total_spent": 780.2,
+    "days_since_last_order": 16,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "390",
+    "total_orders": 10,
+    "total_spent": 505.75,
+    "days_since_last_order": 44,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "391",
+    "total_orders": 20,
+    "total_spent": 1460.5,
+    "days_since_last_order": 13,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "392",
+    "total_orders": 13,
+    "total_spent": 710.4,
+    "days_since_last_order": 59,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "393",
+    "total_orders": 7,
+    "total_spent": 450.8,
+    "days_since_last_order": 28,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "394",
+    "total_orders": 15,
+    "total_spent": 1140.6,
+    "days_since_last_order": 32,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "395",
+    "total_orders": 12,
+    "total_spent": 800.9,
+    "days_since_last_order": 17,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "396",
+    "total_orders": 9,
+    "total_spent": 475.25,
+    "days_since_last_order": 44,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "397",
+    "total_orders": 21,
+    "total_spent": 1480.1,
+    "days_since_last_order": 12,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "398",
+    "total_orders": 10,
+    "total_spent": 660.3,
+    "days_since_last_order": 38,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "399",
+    "total_orders": 8,
+    "total_spent": 470.5,
+    "days_since_last_order": 22,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "400",
+    "total_orders": 16,
+    "total_spent": 1190.8,
+    "days_since_last_order": 25,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "401",
+    "total_orders": 11,
+    "total_spent": 800.2,
+    "days_since_last_order": 18,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "402",
+    "total_orders": 10,
+    "total_spent": 515.75,
+    "days_since_last_order": 45,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "403",
+    "total_orders": 19,
+    "total_spent": 1450.5,
+    "days_since_last_order": 13,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "404",
+    "total_orders": 13,
+    "total_spent": 710.4,
+    "days_since_last_order": 60,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "405",
+    "total_orders": 7,
+    "total_spent": 430.8,
+    "days_since_last_order": 29,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "406",
+    "total_orders": 15,
+    "total_spent": 1160.6,
+    "days_since_last_order": 33,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "407",
+    "total_orders": 12,
+    "total_spent": 820.9,
+    "days_since_last_order": 16,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "408",
+    "total_orders": 9,
+    "total_spent": 495.25,
+    "days_since_last_order": 45,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "409",
+    "total_orders": 21,
+    "total_spent": 1490.1,
+    "days_since_last_order": 11,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "410",
+    "total_orders": 10,
+    "total_spent": 660.3,
+    "days_since_last_order": 39,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "411",
+    "total_orders": 8,
+    "total_spent": 440.5,
+    "days_since_last_order": 24,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "412",
+    "total_orders": 16,
+    "total_spent": 1200.8,
+    "days_since_last_order": 25,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "413",
+    "total_orders": 11,
+    "total_spent": 780.2,
+    "days_since_last_order": 17,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "414",
+    "total_orders": 10,
+    "total_spent": 505.75,
+    "days_since_last_order": 46,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "415",
+    "total_orders": 20,
+    "total_spent": 1460.5,
+    "days_since_last_order": 14,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "416",
+    "total_orders": 13,
+    "total_spent": 710.4,
+    "days_since_last_order": 61,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "417",
+    "total_orders": 7,
+    "total_spent": 450.8,
+    "days_since_last_order": 30,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "418",
+    "total_orders": 15,
+    "total_spent": 1140.6,
+    "days_since_last_order": 34,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "419",
+    "total_orders": 12,
+    "total_spent": 800.9,
+    "days_since_last_order": 19,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "420",
+    "total_orders": 9,
+    "total_spent": 475.25,
+    "days_since_last_order": 46,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "421",
+    "total_orders": 21,
+    "total_spent": 1480.1,
+    "days_since_last_order": 12,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "422",
+    "total_orders": 10,
+    "total_spent": 660.3,
+    "days_since_last_order": 40,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "423",
+    "total_orders": 8,
+    "total_spent": 470.5,
+    "days_since_last_order": 26,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "424",
+    "total_orders": 16,
+    "total_spent": 1190.8,
+    "days_since_last_order": 27,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "425",
+    "total_orders": 11,
+    "total_spent": 780.2,
+    "days_since_last_order": 18,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "426",
+    "total_orders": 10,
+    "total_spent": 515.75,
+    "days_since_last_order": 47,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "427",
+    "total_orders": 19,
+    "total_spent": 1450.5,
+    "days_since_last_order": 14,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "428",
+    "total_orders": 13,
+    "total_spent": 710.4,
+    "days_since_last_order": 62,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "429",
+    "total_orders": 7,
+    "total_spent": 430.8,
+    "days_since_last_order": 31,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "430",
+    "total_orders": 15,
+    "total_spent": 1160.6,
+    "days_since_last_order": 35,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "431",
+    "total_orders": 12,
+    "total_spent": 820.9,
+    "days_since_last_order": 20,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "432",
+    "total_orders": 9,
+    "total_spent": 495.25,
+    "days_since_last_order": 47,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "433",
+    "total_orders": 21,
+    "total_spent": 1490.1,
+    "days_since_last_order": 11,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "434",
+    "total_orders": 10,
+    "total_spent": 660.3,
+    "days_since_last_order": 41,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "435",
+    "total_orders": 8,
+    "total_spent": 440.5,
+    "days_since_last_order": 28,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "436",
+    "total_orders": 16,
+    "total_spent": 1200.8,
+    "days_since_last_order": 28,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "437",
+    "total_orders": 11,
+    "total_spent": 780.2,
+    "days_since_last_order": 19,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "438",
+    "total_orders": 10,
+    "total_spent": 505.75,
+    "days_since_last_order": 48,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "439",
+    "total_orders": 20,
+    "total_spent": 1460.5,
+    "days_since_last_order": 15,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "440",
+    "total_orders": 13,
+    "total_spent": 710.4,
+    "days_since_last_order": 63,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "441",
+    "total_orders": 7,
+    "total_spent": 450.8,
+    "days_since_last_order": 32,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "442",
+    "total_orders": 15,
+    "total_spent": 1140.6,
+    "days_since_last_order": 36,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "443",
+    "total_orders": 12,
+    "total_spent": 800.9,
+    "days_since_last_order": 20,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "444",
+    "total_orders": 9,
+    "total_spent": 475.25,
+    "days_since_last_order": 48,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "445",
+    "total_orders": 21,
+    "total_spent": 1480.1,
+    "days_since_last_order": 13,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "446",
+    "total_orders": 10,
+    "total_spent": 660.3,
+    "days_since_last_order": 42,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "447",
+    "total_orders": 8,
+    "total_spent": 470.5,
+    "days_since_last_order": 27,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "448",
+    "total_orders": 16,
+    "total_spent": 1190.8,
+    "days_since_last_order": 28,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "449",
+    "total_orders": 11,
+    "total_spent": 780.2,
+    "days_since_last_order": 21,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  },
+  {
+    "customer_id": "450",
+    "total_orders": 10,
+    "total_spent": 515.75,
+    "days_since_last_order": 49,
+    "churn_risk_score": null,
+    "email": null,
+    "segment": null
+  }
+]
