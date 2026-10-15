@@ -68,3 +68,17 @@ Thumbs.db
 data/sample_data/**/*.csv
 !data/sample_data/**/.gitkeep
 data/sample_data/eleva.db
+
+# Data
+data/sample_data/*.db
+data/sample_data/*.db-*
+data/uploads/*.csv
+data/uploads/*.json
+*.db
+*.db-wal
+*.db-shm
+*.db.corrupt-*
+*.bak
+
+# Chroma
+chroma_db/
