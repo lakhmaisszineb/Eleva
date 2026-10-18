@@ -121,7 +121,7 @@ def view_data(company_id: str) -> None:
 
     if uploaded is not None and st.button("Lancer l'import", type="primary"):
         UPLOAD_DIR.mkdir(parents=True, exist_ok=True)
-        dest = UPLOAD_DIR / f"{company_id}_{entity}_{uploaded.name}"
+        dest = UPLOAD_DIR / uploaded.name
         with open(dest, "wb") as f:
             f.write(uploaded.getbuffer())
 

@@ -1,0 +1,4 @@
+# Development / test dependencies (kept out of requirements.txt on purpose).
+-r requirements.txt
+pytest>=8
+pytest-cov>=5

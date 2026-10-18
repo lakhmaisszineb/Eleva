@@ -106,3 +106,8 @@ def import_csv(
             f"[Import] Wrote {validation['accepted_count']} '{entity}' rows "
             f"into SQLite for company_id={company_id}"
         )
+    return {
+        "report": report,
+        "accepted": validation["accepted"],
+        "accepted_count": validation["accepted_count"],
+    }

@@ -1,0 +1,4 @@
+customer_id,total_orders,total_spent,days_since_last_order,churn_risk_score,email,segment
+c1,3,150.5,10,0.2,a@example.test,VIP
+c2,1,20,200,0.9,,
+c3,0,0,,,,

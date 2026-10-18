@@ -29,11 +29,12 @@ def _row_to_dict(row, core_fields: List[str]) -> Dict[str, Any]:
 class CompanyStore:
     def __init__(self, data_dir: Optional[Path] = None):
         self.data_dir = data_dir or settings.data_dir
-        init_db()
+        self.db_path = self.data_dir / "eleva.db"  
+        init_db(self.db_path)
         logger.info(f"CompanyStore initialized with data_dir={self.data_dir} (SQLite)")
 
     def get_company_context(self, company_id: str) -> CompanyContext:
-        conn = get_connection()
+        conn = get_connection(self.db_path)
         try:
             row = conn.execute(
                 "SELECT * FROM company_profile WHERE company_id = ?", (company_id,)
@@ -53,7 +54,7 @@ class CompanyStore:
         )
 
     def get_customers(self, company_id: str) -> List[Dict[str, Any]]:
-        conn = get_connection()
+        conn = get_connection(self.db_path)
         try:
             rows = conn.execute("SELECT * FROM customers WHERE company_id = ?", (company_id,)).fetchall()
         finally:
@@ -61,7 +62,7 @@ class CompanyStore:
         return [_row_to_dict(r, _CUSTOMER_CORE_FIELDS) for r in rows]
 
     def get_orders(self, company_id: str) -> List[Dict[str, Any]]:
-        conn = get_connection()
+        conn = get_connection(self.db_path)
         try:
             rows = conn.execute("SELECT * FROM orders WHERE company_id = ?", (company_id,)).fetchall()
         finally:
@@ -69,7 +70,7 @@ class CompanyStore:
         return [_row_to_dict(r, _ORDER_CORE_FIELDS) for r in rows]
 
     def get_campaigns(self, company_id: str) -> List[Dict[str, Any]]:
-        conn = get_connection()
+        conn = get_connection(self.db_path)
         try:
             rows = conn.execute("SELECT * FROM campaigns WHERE company_id = ?", (company_id,)).fetchall()
         finally:
@@ -77,7 +78,7 @@ class CompanyStore:
         return [_row_to_dict(r, _CAMPAIGN_CORE_FIELDS) for r in rows]
 
     def list_available_companies(self) -> List[str]:
-        conn = get_connection()
+        conn = get_connection(self.db_path)
         try:
             rows = conn.execute("SELECT company_id FROM company_profile").fetchall()
         finally:

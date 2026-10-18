@@ -1,7 +1,7 @@
 """
 Groq client wrapper.
 
-Uses llama-3.3-70b-versatile by default.
+Uses openai/gpt-oss-120b by default.
 Provides a simple chat() helper that returns clean text.
 """
 

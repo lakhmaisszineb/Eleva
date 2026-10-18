@@ -1,0 +1,6 @@
+order_id,customer_id,status,total,order_date
+o1,c1,completed,10,2026-01-01
+o2,,completed,10,2026-01-02
+o3,,completed,10,2026-01-03
+o4,,completed,10,2026-01-04
+o5,,completed,10,2026-01-05

@@ -41,7 +41,7 @@ class Settings(BaseSettings):
     # ------------------------------------------------------------------
     groq_api_key: str = Field(..., description="Groq API key (required)")
     groq_model: str = Field(
-        default="llama-3.3-70b-versatile",
+        default="openai/gpt-oss-120b",
         description="Groq model to use"
     )
 

@@ -94,7 +94,7 @@ copy .env.example .env
 Edit .env and set at least:
 
 envGROQ_API_KEY=gsk_your_key_here
-GROQ_MODEL=llama-3.3-70b-versatile
+GROQ_MODEL=openai/gpt-oss-120b
 DATA_DIR=./data/sample_data
 KNOWLEDGE_DIR=./knowledge/playbooks
 CHROMA_PERSIST_DIR=./chroma_db

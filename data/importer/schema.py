@@ -64,7 +64,7 @@ ALIASES: Dict[str, List[str]] = {
     ],
     "total_orders": [
         "total_orders", "orders_count", "nb_commandes", "number_of_orders",
-        "order_count", "commandes",
+        "order_count", "commandes", "items purchased",
     ],
     "total_spent": [
         "total_spent", "lifetime_value", "ltv", "ca_client", "total_spend",
