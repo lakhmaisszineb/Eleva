@@ -61,6 +61,8 @@ def recommend_node(state: DecisionState) -> DecisionState:
         }
 
         for r in data.get("recommendations", []):
+            raw_priority = r.get("priority")
+            priority_key = str(raw_priority or "medium").strip().lower()
             recommendations.append(
                 Recommendation(
                     id=str(uuid.uuid4())[:8],
@@ -68,7 +70,7 @@ def recommend_node(state: DecisionState) -> DecisionState:
                     title=r.get("title", "Recommandation"),
                     summary=r.get("summary", ""),
                     justification=r.get("justification", ""),
-                    priority=priority_map.get(r.get("priority", "medium").lower(), Priority.MEDIUM),
+                    priority=priority_map.get(priority_key, Priority.MEDIUM),
                     strategies=state.strategies[:1],
                     expected_outcomes=r.get("expected_outcomes", []),
                     next_steps=r.get("next_steps", []),

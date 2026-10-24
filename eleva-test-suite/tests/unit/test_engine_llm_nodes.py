@@ -81,13 +81,13 @@ def test_reason_no_issues_and_no_hypotheses(fake_llm):
     assert st.hypotheses == [] and st.current_step == "plan"
 
 
-@pytest.mark.xfail(strict=True, reason="BUG-4: a hypothesis with no 'issue_title' matches EVERY issue ('' is a substring of any title)")
+# @pytest.mark.xfail(strict=True, reason="BUG4: a hypothesis with no 'issue_title' matches EVERY issue ('' is a substring of any title)")
 def test_reason_missing_issue_title_should_not_link_to_all_issues(fake_llm):
     fake_llm.set("reason", json.dumps({"hypotheses": [{"statement": "S", "confidence": 0.5}]}))
     assert len(reason_node(_state(n_issues=3)).hypotheses[0].related_issue_ids) == 1
 
 
-@pytest.mark.xfail(strict=True, reason="BUG-6: one null field ('confidence': null) throws away the whole LLM answer")
+# @pytest.mark.xfail(strict=True, reason="BUG6: one null field ('confidence': null) throws away the whole LLM answer")
 def test_reason_null_confidence_keeps_valid_llm_text(fake_llm):
     fake_llm.set("reason", json.dumps({"hypotheses": [
         {"issue_title": "Issue 0", "statement": "KEEP-ME", "confidence": None}]}))
@@ -205,7 +205,7 @@ def test_recommend_LIMITATION_every_llm_recommendation_gets_the_same_first_strat
     assert all([s.id for s in r.strategies] == ["s0"] for r in st.recommendations)
 
 
-@pytest.mark.xfail(strict=True, reason="BUG-6: 'priority': null makes .lower() raise -> whole LLM answer discarded")
+# @pytest.mark.xfail(strict=True, reason="BUG6: 'priority': null makes .lower() raise -> whole LLM answer discarded")
 def test_recommend_null_priority_keeps_valid_llm_text(fake_llm):
     fake_llm.set("recommend", json.dumps({"recommendations": [{"title": "KEEP-ME", "priority": None}]}))
     assert recommend_node(_with_strategies()).recommendations[0].title == "KEEP-ME"

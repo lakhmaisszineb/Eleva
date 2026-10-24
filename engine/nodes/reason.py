@@ -56,18 +56,34 @@ def reason_node(state: DecisionState) -> DecisionState:
 
         for h in data.get("hypotheses", []):
             # Match issue by title (approximate)
+            # Match issue by title when the LLM provides an issue title.
             related_ids = []
-            for issue in state.detected_issues:
-                if issue.title.lower() in h.get("issue_title", "").lower() or \
-                   h.get("issue_title", "").lower() in issue.title.lower():
-                    related_ids.append(issue.id)
+            issue_title = str(h.get("issue_title") or "").strip().lower()
 
+            if issue_title:
+                for issue in state.detected_issues:
+                    issue_title_candidate = issue.title.lower()
+
+                    if (
+                        issue_title_candidate in issue_title
+                        or issue_title in issue_title_candidate
+                    ):
+                        related_ids.append(issue.id)
+            raw_confidence = h.get("confidence")
+            try:
+                confidence = (
+                    float(raw_confidence)
+                    if raw_confidence is not None
+                    else 0.7
+                )
+            except (TypeError, ValueError):
+                confidence = 0.7
             hypotheses.append(
                 Hypothesis(
                     id=str(uuid.uuid4())[:8],
                     statement=h.get("statement", ""),
                     supporting_evidence=[],
-                    confidence=float(h.get("confidence", 0.7)),
+                    confidence=confidence,
                     related_issue_ids=related_ids or (
                         [state.detected_issues[0].id] if state.detected_issues else []
                     ),
