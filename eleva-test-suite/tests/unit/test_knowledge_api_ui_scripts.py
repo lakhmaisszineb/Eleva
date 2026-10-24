@@ -12,7 +12,14 @@ from core.models import (AnalysisRequest, DecisionState, CompanyContext, Recomme
 from knowledge.loader import load_playbooks
 from ui.errors import humanize_error
 
-REAL_PLAYBOOKS = Path(__file__).resolve().parents[2] / "knowledge" / "playbooks"
+# REAL_PLAYBOOKS = Path(__file__).resolve().parents[2] / "knowledge" / "playbooks"
+
+REAL_PLAYBOOKS = (
+    Path(__file__).resolve().parents[3]
+    / "knowledge"
+    / "playbooks"
+)
+
 
 
 # ============================== playbook loader ==============================

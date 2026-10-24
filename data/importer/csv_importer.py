@@ -48,6 +48,11 @@ def import_csv(
             raise ValueError("CSV has no header row")
         columns = list(reader.fieldnames)
         raw_rows = list(reader)
+        if not raw_rows:
+            raise ValueError(
+                "CSV contains no data rows; import aborted to protect existing data."
+            )
+
 
     logger.info(f"[Import] {path.name}: {len(columns)} columns, {len(raw_rows)} rows")
 

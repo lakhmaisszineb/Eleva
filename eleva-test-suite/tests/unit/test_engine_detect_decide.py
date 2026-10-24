@@ -78,7 +78,7 @@ def test_detect_issue_ids_are_unique_and_evidence_present():
     assert all(i.evidence for i in st.detected_issues)
 
 
-@pytest.mark.xfail(strict=True, reason="BUG-1: detect.py lowercases the insight then searches for 'faible ROI' (uppercase ROI) -> never matches, so low-ROI campaigns are never reported as an issue")
+# @pytest.mark.xfail(strict=True, reason="BUG-1: detect.py lowercases the insight then searches for 'faible ROI' (uppercase ROI) -> never matches, so low-ROI campaigns are never reported as an issue")
 def test_detect_low_roi_issue_from_the_exact_insight_text_produced_by_observe():
     """observe_node writes: 'Campagnes à faible ROI détectées : <names>.'
     detect_node must turn that into a 'Campagnes sous-performantes' issue."""

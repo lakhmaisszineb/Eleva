@@ -168,4 +168,10 @@ def test_db(tmp_path):
     conn.commit()
     conn.close()
 
+    import sqlite3
+
+    check_conn = sqlite3.connect(db_path)
+    check_conn.close()
+
+
     yield db_path

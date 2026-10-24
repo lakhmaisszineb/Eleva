@@ -106,18 +106,18 @@ def test_import_is_scoped_to_one_company_and_one_entity(fake_llm):
     assert len(_rows("customers", "other")) == before_c and len(_rows("orders", "other")) == before_o
 
 
-@pytest.mark.xfail(strict=True, reason="BUG-2: import_csv() is documented to return {report,...} and ui/views.py reads result['report'], but it returns None -> the UI shows an error banner AFTER a successful import")
+# @pytest.mark.xfail(strict=True, reason="BUG-2: import_csv() is documented to return {report,...} and ui/views.py reads result['report'], but it returns None -> the UI shows an error banner AFTER a successful import")
 def test_import_csv_returns_report_dict_used_by_the_ui(fake_llm):
     result = import_csv(FIX / "customers_clean.csv", "customers", "co")
     assert result["report"]["accepted_count"] == 3 and result["report"]["total_read"] == 3
 
 
-@pytest.mark.xfail(strict=True, reason="BUG-7: a header-only CSV is accepted (0 rows, 0 rejects) and replace_*() then DELETES every existing row of that entity for the company")
+# @pytest.mark.xfail(strict=True, reason="BUG-7: a header-only CSV is accepted (0 rows, 0 rejects) and replace_*() then DELETES every existing row of that entity for the company")
 def test_header_only_csv_must_not_wipe_existing_data(fake_llm):
     seed_company("co")
     before = len(_rows("customers"))
-    try:
+    with pytest.raises(ValueError, match="no data rows"):
         import_csv(FIX / "header_only.csv", "customers", "co")
-    except ValueError:
-        pass                                     # refusing the import would also be acceptable
+        
     assert len(_rows("customers")) == before
+

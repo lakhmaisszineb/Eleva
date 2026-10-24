@@ -28,8 +28,9 @@ def _row_to_dict(row, core_fields: List[str]) -> Dict[str, Any]:
 
 class CompanyStore:
     def __init__(self, data_dir: Optional[Path] = None):
+        from data.db import DB_PATH
         self.data_dir = data_dir or settings.data_dir
-        self.db_path = self.data_dir / "eleva.db"  
+        self.db_path = (self.data_dir / "eleva.db") if data_dir else DB_PATH 
         init_db(self.db_path)
         logger.info(f"CompanyStore initialized with data_dir={self.data_dir} (SQLite)")
 

@@ -62,7 +62,7 @@ def test_detect_after_observe_finds_expected_issues(seeded_company):
     assert "Taux de réachat faible" not in titles              # repeat rate = 1.0
 
 
-@pytest.mark.xfail(strict=True, reason="BUG-1 (end-to-end): Camp B has ROI 1.0 (<1.5) and observe reports it, but detect never turns it into an issue")
+# @pytest.mark.xfail(strict=True, reason="BUG-1 (end-to-end): Camp B has ROI 1.0 (<1.5) and observe reports it, but detect never turns it into an issue")
 def test_low_roi_campaign_becomes_a_detected_issue_end_to_end(seeded_company):
     st = detect_node(observe_node(DecisionState(request=_req())))
     assert "Campagnes sous-performantes" in {i.title for i in st.detected_issues}

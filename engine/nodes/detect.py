@@ -141,7 +141,7 @@ def detect_node(state: DecisionState) -> DecisionState:
 
     low_roi_insights = [
         i for i in obs.raw_insights
-        if "faible ROI" in i.lower() or "low roi" in i.lower()
+        if "faible roi" in i.lower() or "low roi" in i.lower()
     ]
     if low_roi_insights:
         add_issue(

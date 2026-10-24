@@ -148,7 +148,7 @@ def test_store_list_available_companies():
     assert sorted(CompanyStore().list_available_companies()) == ["A", "B"]
 
 
-@pytest.mark.xfail(strict=True, reason="BUG-5: CompanyStore(data_dir=...) accepts a data_dir but ignores it (always uses data.db.DB_PATH)")
+# @pytest.mark.xfail(strict=True, reason="BUG-5: CompanyStore(data_dir=...) accepts a data_dir but ignores it (always uses data.db.DB_PATH)")
 def test_store_data_dir_argument_is_honoured(tmp_path):
     other = tmp_path / "other_dir"            # does not exist yet
     CompanyStore(data_dir=other)              # a store pointed at data_dir should create/use <data_dir>/eleva.db
