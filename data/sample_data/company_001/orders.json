@@ -1,28 +1,28 @@
 [
   {
     "order_id": "CMD-100",
-    "customer_id": "c1",
+    "customer_id": "101",
     "status": "completed",
     "total": 89.5,
     "order_date": "2026-06-28"
   },
   {
     "order_id": "CMD-101",
-    "customer_id": "c2",
+    "customer_id": "102",
     "status": "abandoned",
     "total": 74.0,
     "order_date": "2026-07-20"
   },
   {
     "order_id": "CMD-102",
-    "customer_id": "c3",
+    "customer_id": "103",
     "status": "completed",
     "total": 65.0,
     "order_date": "2026-07-10"
   },
   {
     "order_id": "CMD-103",
-    "customer_id": "c1",
+    "customer_id": "104",
     "status": "refunded",
     "total": 54.0,
     "order_date": "2026-04-02"

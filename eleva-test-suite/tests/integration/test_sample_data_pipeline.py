@@ -49,7 +49,7 @@ def test_demo_company_runs_full_pipeline(company_id, fake_llm):
     assert st.recommendations and all(r.status.value == "pending_approval" for r in st.recommendations)
 
 
-@pytest.mark.xfail(strict=True, reason="DATA-1: in company_001 the 4 orders reference customer ids (c1..c4) that do not exist among the 350 customers (101..450), so order-based KPIs/RFM cannot be linked to customers")
+# @pytest.mark.xfail(strict=True, reason="DATA-1: in company_001 the 4 orders reference customer ids (c1..c4) that do not exist among the 350 customers (101..450), so order-based KPIs/RFM cannot be linked to customers")
 def test_demo_orders_reference_existing_customers():
     for company_id in COMPANIES:
         cust = {c["customer_id"] for c in _json(company_id, "customers.json")}
