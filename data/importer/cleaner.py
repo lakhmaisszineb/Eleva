@@ -31,17 +31,54 @@ STATUS_MAP = {
 }
 
 
+# def _to_float(value: Any) -> Optional[float]:
+#     if value is None or value == "":
+#         return None
+#     if isinstance(value, (int, float)):
+#         return float(value)
+#     s = str(value).strip().replace(" ", "").replace(",", ".")
+#     s = re.sub(r"[^\d.\-]", "", s)
+#     try:
+#         return float(s)
+#     except ValueError:
+#         return None
+
 def _to_float(value: Any) -> Optional[float]:
     if value is None or value == "":
         return None
+
     if isinstance(value, (int, float)):
         return float(value)
-    s = str(value).strip().replace(" ", "").replace(",", ".")
-    s = re.sub(r"[^\d.\-]", "", s)
+
+    s = str(value).strip()
+
+    # Supprime les séparateurs de milliers sous forme d'espaces.
+    s = s.replace(" ", "").replace("\u00a0", "")
+
+    # Conserve les chiffres, le signe, la virgule et le point.
+    s = re.sub(r"[^\d,.\-]", "", s)
+
+    if not s:
+        return None
+
+    # Formats contenant les deux séparateurs :
+    # 1,234.56 -> format anglo-saxon
+    # 1.234,56 -> format européen
+    if "," in s and "." in s:
+        if s.rfind(",") < s.rfind("."):
+            s = s.replace(",", "")
+        else:
+            s = s.replace(".", "").replace(",", ".")
+
+    # Format décimal avec virgule : 12,5 -> 12.5
+    elif "," in s:
+        s = s.replace(",", ".")
+
     try:
         return float(s)
     except ValueError:
         return None
+
 
 
 def _to_int(value: Any) -> Optional[int]:

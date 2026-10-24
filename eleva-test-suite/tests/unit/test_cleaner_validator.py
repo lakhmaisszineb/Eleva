@@ -25,7 +25,7 @@ def test_to_int_truncates_toward_zero():
     assert cl._to_int(None) is None
 
 
-@pytest.mark.xfail(strict=True, reason="BUG-3: '1,234.56' (US thousands format) -> ',' becomes '.' -> '1.234.56' -> None")
+# @pytest.mark.xfail(strict=True, reason="BUG-3: '1,234.56' (US thousands format) -> ',' becomes '.' -> '1.234.56' -> None")
 def test_to_float_us_thousands_format():
     assert cl._to_float("1,234.56") == 1234.56
 
