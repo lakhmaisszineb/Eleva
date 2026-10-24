@@ -50,7 +50,7 @@ def test_parse_date_datetime_object():
     assert cl._parse_date(datetime(2026, 1, 2, 3)) == "2026-01-02"
 
 
-@pytest.mark.xfail(strict=True, reason="LIMITATION-1: '7-Sep-20' (used by data/uploads/*client.csv) is not a supported date format")
+# @pytest.mark.xfail(strict=True, reason="LIMITATION-1: '7-Sep-20' (used by data/uploads/*client.csv) is not a supported date format")
 def test_parse_date_dmy_with_month_name():
     assert cl._parse_date("7-Sep-20") == "2020-09-07"
 

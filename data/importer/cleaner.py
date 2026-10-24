@@ -102,7 +102,14 @@ def _parse_date(value: Any) -> Optional[str]:
     if isinstance(value, datetime):
         return value.strftime("%Y-%m-%d")
     s = str(value).strip()
-    for fmt in ("%Y-%m-%d", "%d/%m/%Y", "%d-%m-%Y", "%Y/%m/%d", "%d.%m.%Y"):
+    for fmt in (
+        "%Y-%m-%d",
+        "%d/%m/%Y",
+        "%d-%m-%Y",
+        "%Y/%m/%d",
+        "%d.%m.%Y",
+        "%d-%b-%y",
+    ):
         try:
             return datetime.strptime(s[:10], fmt).strftime("%Y-%m-%d")
         except ValueError:
