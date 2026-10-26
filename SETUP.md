@@ -74,7 +74,7 @@ Edit .env and add your GROQ_API_KEY.
 pip-audit
 
 # Alternative
-safety check
+safety scan
 
 # Analyse statique du code (quand on aura du code)
 # bandit -r .
@@ -114,7 +114,8 @@ Swagger: http://127.0.0.1:8000/docs
 Terminal 2 — UI (Streamlit)
 
 ```bash
-streamlit run ui/app.py
+streamlit run streamlit_app.py
+
 ```
 UI: http://localhost:8501
 
