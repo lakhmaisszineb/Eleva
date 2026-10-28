@@ -106,7 +106,7 @@ Never commit the real .env file.
 Always from the project root (eleva/), with the virtualenv activated.
 Terminal 1 — API (backend)
 ```bash
-uvicorn api.main:app --reload --host 0.0.0.0 --port 8000
+uvicorn api.main:app --reload --host 127.0.0.1 --port 8000
 ```
 Health: http://127.0.0.1:8000/health
 Swagger: http://127.0.0.1:8000/docs
